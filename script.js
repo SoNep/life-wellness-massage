@@ -21,16 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const toggleNav = () => {
         mobileToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        navLinks.classList.toggle('mobile-active');
+        document.body.style.overflow = navLinks.classList.contains('mobile-active') ? 'hidden' : '';
     };
 
-    mobileToggle.addEventListener('click', toggleNav);
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', toggleNav);
+    }
 
     // Close mobile nav when clicking a link
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
+            if (navLinks.classList.contains('mobile-active')) {
                 toggleNav();
             }
         });
