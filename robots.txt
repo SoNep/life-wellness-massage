@@ -1,12 +1,12 @@
 # robots.txt for LIFE WELLNESS MASSAGE
-# https://lifewellnessmassage.co.nz/
+# https://lifewell.nz/
 
 User-agent: *
 Allow: /
 Disallow:
 
 # Sitemap location
-Sitemap: https://lifewellnessmassage.co.nz/sitemap.xml
+Sitemap: https://lifewell.nz/sitemap.xml
 
 # AI Agents
 # See also: /llms.txt for AI-agent-optimized content
